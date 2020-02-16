@@ -13,7 +13,7 @@ end
 def run_guessing_game
     random_number
     prompt_user
-    input = get_input
+    input = get_input.to_i
 
     if random_number == input.to_i
         puts "You guessed the correct number!"
